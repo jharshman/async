@@ -67,10 +67,6 @@ type Job struct {
 	// This is used by Execute(). Defaults to SIGINT and SIGTERM.
 	Signals []os.Signal
 
-	// todo: decide if this is in fact useful
-	// Pointer to next Job. Useful for chaining order of operations.
-	Next *Job
-
 	// references to job comm channels
 	sig *chan int
 	ack *chan int

@@ -137,14 +137,6 @@ LOOP:
 		}
 	}
 
-	// todo: think a bit more on the job.Next functionality
-	//// check for next
-	//if j.Next != nil {
-	//	if nextErr := j.Next.Execute(); nextErr != nil {
-	//		return nextErr
-	//	}
-	//}
-
 	return nil
 }
 
